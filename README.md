@@ -18,7 +18,8 @@ This project showcases the following **SQL and data analytics skills**, along wi
 - Created relational tables with primary and foreign keys  
 - Defined relationships between children, kits, builds, and challenges  
 - **Screenshot:**  
-  ![ERD Diagram](screenshots/erd_full_database.png)
+  ![ERD Diagram](screenshot<img width="554" height="601" alt="erd_full_database png" src="https://github.com/user-attachments/assets/bcdb9254-ae09-4ed4-9343-b6b1a54e5b84" />
+s/erd_full_database.png)
 
 ### 2. Data Retrieval & Querying
 - SELECT statements with filtering (`WHERE`) and sorting (`ORDER BY`)  
