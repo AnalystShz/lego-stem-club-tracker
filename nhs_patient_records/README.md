@@ -49,6 +49,13 @@ These examples demonstrate filtering and sorting in SQL.
 🔹 Query 1 — Patients older than 40
 Filters patients over age 40 and sorts by highest age.
 
+SELECT * 
+FROM Patients
+WHERE Age > 40
+ORDER BY Age DESC;
+
+
+
 <img width="526" height="293" alt="select" src="https://github.com/user-attachments/assets/d79ab430-a67a-47fb-a679-396fc475a1c2" /> 
 
 
