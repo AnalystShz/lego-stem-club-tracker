@@ -1,7 +1,7 @@
-🏥 NHS Patient Records Database 
+## 🏥 NHS Patient Records Database 
 
 
-📌 Overview 
+# 📌 Overview 
 
 The NHS Patient Records Database is a simulated healthcare dataset designed to model how patient information, GP practices, and appointments are stored and analysed within an NHS-style system.
 
@@ -12,7 +12,7 @@ This project demonstrates practical skills in:
 - Aggregation & basic analytics
 - Visualisation using DBeaver
 
-🌟 Key Features
+# 🌟 Key Features
 
 - Relational database with Patients, GP Practices, and Appointments
 - Queries demonstrating:
@@ -23,7 +23,7 @@ This project demonstrates practical skills in:
 - Visual screenshots of database structure and results
 
 
-🛠️ 1️⃣ Database Design & Management 
+# 🛠️ 1️⃣ Database Design & Management 
 ✔️ What I Did
 - 3 relational tables:
   - Patients
@@ -43,7 +43,7 @@ ER Diagram (Full Database Structure)
 
 <img width="668" height="391" alt="AppointmentsTable" src="https://github.com/user-attachments/assets/2f122822-1bd2-4cf1-9b8b-6986905ee499" /> <img width="724" height="421" alt="gpPractices" src="https://github.com/user-attachments/assets/c53494d1-e228-4459-a715-211de8a1beec" /> 
 
-🔍 2️⃣ Data Retrieval & Querying 
+# 🔍 2️⃣ Data Retrieval & Querying 
 These examples demonstrate filtering and sorting in SQL.
 
 🔹 Query 1 — Patients older than 40
@@ -73,7 +73,7 @@ ORDER BY IMD_Score ASC;
 
 
 
-🔗 3️⃣ Joins to Combine Tables 
+# 🔗 3️⃣ Joins to Combine Tables 
 🔹 Join Example 1 — Patients + GP Practice Names
 
 SELECT Patients.PatientID, Patients.Name, GP_Practices.Practice_Name
@@ -96,7 +96,7 @@ WHERE Appointments.Attended = 'Yes';
 
 
 
-📊 4️⃣ Aggregations (GROUP BY + COUNT)
+# 📊 4️⃣ Aggregations (GROUP BY + COUNT)
 🔹 Aggregation 1 — Patient Count per GP Practice
 SELECT GP_Practices.Practice_Name, COUNT(Patients.PatientID) AS Patient_Count
 FROM GP_Practices
@@ -119,14 +119,13 @@ ORDER BY Count DESC;
 <img width="341" height="125" alt="aggr2" src="https://github.com/user-attachments/assets/f1b1bf7f-0b63-4f2b-9c72-83ccd44cc429" />
 
 
-▶️ How to Run This Project
+## ▶️ How to Run This Project
 Requirements
 - MySQL Server
 - DBeaver / MySQL Workbench
 - SQL file containing table creation & insert statements (optional if you want me to generate it)
 
 Steps
-
 1. Create a new MySQL database:
 
 CREATE DATABASE NHS_Records;
@@ -137,7 +136,9 @@ CREATE DATABASE NHS_Records;
 4. Run queries shown in this project
 5. View results in DBeaver
 
-📝 Summary
+## 📝 Summary
+
+
 This project demonstrates the full lifecycle of SQL analytics:
 - Designing relational tables
 - Querying and filtering real-world style patient data
