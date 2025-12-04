@@ -47,43 +47,31 @@ This project showcases the following **SQL and data analytics skills**, along wi
  <img width="626" height="321" alt="insert_update_results png" src="https://github.com/user-attachments/assets/f0e7ac5f-a5d8-4db8-9803-38046c895625" />
 
 
-How to Run / Instructions
+## How to Run / Instructions
 Step 1 — Clone the Repository
 git clone https://github.com/AnalystShz/lego-stem-club-tracker.git
 
 Step 2 — Open the Project in DBeaver
-
 Open DBeaver.
-
 Go to Database → New Database Connection → MySQL.
-
 Enter your MySQL credentials and connect.
 
 Step 3 — Use the Existing Database
 USE lego_stem_club;
 
 Step 4 — Run Skill Demonstration Queries
-
 Open your SQL scripts in DBeaver.
-
 Run the queries used to demonstrate skills:
 
 SELECT * FROM children;
-
 Joins queries
-
 Aggregation / GROUP BY
-
 Filtering / WHERE + ORDER BY
-
 Views (SELECT * FROM top_scores;)
-
 Stored procedures (CALL get_child_scores(1);)
 
-Tips
+##Tips
 
 Make sure table and column names match your queries.
-
 Running queries multiple times is safe — table creation scripts are not needed since tables already exist.
-
 Use the screenshots in this README as reference for expected results.
