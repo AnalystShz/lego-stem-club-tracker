@@ -52,6 +52,9 @@ These examples demonstrate filtering and sorting in SQL.
 
 Filters patients over age 40 and sorts by highest age.
 
+
+
+
 SELECT * 
 FROM Patients
 WHERE Age > 40
@@ -64,6 +67,8 @@ ORDER BY Age DESC;
 
 Retrieves female patients located in LE5, sorted by IMD score.
 
+
+
 SELECT *
 FROM Patients
 WHERE Gender = 'Female'
@@ -75,12 +80,20 @@ ORDER BY IMD_Score ASC;
 
 🔗 3️⃣ Joins to Combine Tables
 🔹 Join Example 1 — Patients + GP Practice Names
+
+
+
+
 SELECT Patients.PatientID, Patients.Name, GP_Practices.Practice_Name
 FROM Patients
 JOIN GP_Practices ON Patients.GP_ID = GP_Practices.GP_ID;
 
 <img width="577" height="479" alt="joins1" src="https://github.com/user-attachments/assets/ac515296-fde6-4252-bec7-b5b6a814f91e" />
 🔹 Join Example 2 — Patients with Appointment Attendance
+
+
+
+
 SELECT Patients.Name, Appointments.Appointment_Date, GP_Practices.Practice_Name
 FROM Appointments
 JOIN Patients ON Appointments.PatientID = Patients.PatientID
@@ -93,6 +106,10 @@ WHERE Appointments.Attended = 'Yes';
 
 📊 4️⃣ Aggregations (GROUP BY + COUNT)
 🔹 Aggregation 1 — Patient Count per GP Practice
+
+
+
+
 SELECT GP_Practices.Practice_Name, COUNT(Patients.PatientID) AS Patient_Count
 FROM GP_Practices
 LEFT JOIN Patients ON GP_Practices.GP_ID = Patients.GP_ID
@@ -100,6 +117,10 @@ GROUP BY GP_Practices.Practice_Name;
 
 <img width="397" height="182" alt="aggr1" src="https://github.com/user-attachments/assets/19237716-2593-4a06-83c5-88795d849531" />
 🔹 Aggregation 2 — Most Common Gender of Attending Patients
+
+
+
+
 SELECT Gender, COUNT(*) AS Count
 FROM Patients
 JOIN Appointments ON Patients.PatientID = Appointments.PatientID
