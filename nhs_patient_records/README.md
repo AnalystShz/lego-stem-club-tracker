@@ -9,7 +9,7 @@ This project demonstrates skills in SQL, database design, data retrieval, aggreg
 ## Skills Demonstrated
 
 This project showcases SQL and data analytics skills, along with screenshots demonstrating each skill.
-1. Database Design & Management
+## 1. Database Design & Management
 Created relational tables with primary and foreign keys: Patients, GP_Practices, Appointments
 Defined relationships between patients, GP practices, and appointments
 
@@ -19,3 +19,22 @@ Defined relationships between patients, GP practices, and appointments
 - Table view of Appointments table diagram & GP_Practices table diagram in DBeaver
 <img width="668" height="391" alt="AppointmentsTable" src="https://github.com/user-attachments/assets/2f122822-1bd2-4cf1-9b8b-6986905ee499" />
 <img width="724" height="421" alt="gpPractices" src="https://github.com/user-attachments/assets/c53494d1-e228-4459-a715-211de8a1beec" />
+
+## 2. Data Retrieval & Querying
+
+- SELECT statements with filtering (WHERE) and sorting (ORDER BY)
+- 1: Patients older than 40, sorted by age descending
+<img width="526" height="293" alt="select" src="https://github.com/user-attachments/assets/d79ab430-a67a-47fb-a679-396fc475a1c2" />
+WHERE Age > 40 → only patients older than 40
+ORDER BY Age DESC → highest age first
+
+
+- Joins to combine data across multiple tables
+- Aggregations using GROUP BY and functions like COUNT
+
+## Visuals:
+
+- Query showing most common gender among patients who attended appointments
+- Query showing most common age group
+
+Query showing most common ethnicity
