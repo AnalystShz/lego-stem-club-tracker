@@ -71,6 +71,8 @@ WHERE Gender = 'Female'
 ORDER BY IMD_Score ASC;
 
 <img width="693" height="160" alt="SELECT2" src="https://github.com/user-attachments/assets/e03b12c6-97c8-40ac-a1ec-6ae649092aff" />
+
+
 🔗 3️⃣ Joins to Combine Tables
 🔹 Join Example 1 — Patients + GP Practice Names
 SELECT Patients.PatientID, Patients.Name, GP_Practices.Practice_Name
@@ -86,6 +88,9 @@ JOIN GP_Practices ON Patients.GP_ID = GP_Practices.GP_ID
 WHERE Appointments.Attended = 'Yes';
 
 <img width="665" height="575" alt="joins2" src="https://github.com/user-attachments/assets/eac4c64c-8123-4be7-8a93-791b21e5583f" />
+
+
+
 📊 4️⃣ Aggregations (GROUP BY + COUNT)
 🔹 Aggregation 1 — Patient Count per GP Practice
 SELECT GP_Practices.Practice_Name, COUNT(Patients.PatientID) AS Patient_Count
@@ -103,15 +108,16 @@ GROUP BY Gender
 ORDER BY Count DESC;
 
 <img width="341" height="125" alt="aggr2" src="https://github.com/user-attachments/assets/f1b1bf7f-0b63-4f2b-9c72-83ccd44cc429" />
+
+
+
 ▶️ How to Run This Project
 Requirements
-
 MySQL Server
 DBeaver / MySQL Workbench
 SQL file containing table creation & insert statements (optional if you want me to generate it)
 
-Steps
-
+# Steps
 Create a new MySQL database:
 CREATE DATABASE NHS_Records;
 
