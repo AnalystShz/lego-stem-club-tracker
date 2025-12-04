@@ -28,6 +28,8 @@ Defined relationships between patients, GP practices, and appointments
 WHERE Age > 40 → only patients older than 40
 ORDER BY Age DESC → highest age first
 
+2: Female patients in postcode area 'LE5', sorted by IMD score ascending
+<img width="693" height="160" alt="SELECT2" src="https://github.com/user-attachments/assets/e03b12c6-97c8-40ac-a1ec-6ae649092aff" />
 
 - Joins to combine data across multiple tables
 - Aggregations using GROUP BY and functions like COUNT
