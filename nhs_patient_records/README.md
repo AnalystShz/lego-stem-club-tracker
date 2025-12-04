@@ -52,3 +52,14 @@ Defined relationships between patients, GP practices, and appointments
 <img width="665" height="575" alt="joins2" src="https://github.com/user-attachments/assets/eac4c64c-8123-4be7-8a93-791b21e5583f" />
 
 
+## 4️⃣ Aggregations with GROUP BY and COUNT
+1: Count of patients per GP practice
+<img width="397" height="182" alt="aggr1" src="https://github.com/user-attachments/assets/19237716-2593-4a06-83c5-88795d849531" />
+
+
+2: Most common gender among patients who attended appointments
+
+<img width="341" height="125" alt="aggr2" src="https://github.com/user-attachments/assets/f1b1bf7f-0b63-4f2b-9c72-83ccd44cc429" />
+
+
+
